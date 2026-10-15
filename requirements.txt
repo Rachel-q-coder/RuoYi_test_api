@@ -1,0 +1,4 @@
+pytest>=7.4.0        # 测试框架，负责发现、组织、执行用例
+requests>=2.31.0     # 发送 HTTP 请求（调接口用）
+PyYAML>=6.0          # 读取 config.yaml / data 里的 yaml 数据
+allure-pytest>=2.13.0  # 让 pytest 生成 Allure 报告数据
