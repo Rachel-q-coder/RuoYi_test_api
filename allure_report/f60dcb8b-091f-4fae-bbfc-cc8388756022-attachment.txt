@@ -1,0 +1,8 @@
+[32mINFO    [0m api_autotest:request_util.py:27 --> POST http://192.168.139.128:1024/dev-api/system/user | kwargs={'json': {'userName': 'auto92049202', 'nickName': '自动化测试用户', 'password': 'test123456', 'deptId': 100, 'phonenumber': '13892049202', 'email': 'auto92049202@test.com', 'sex': '0'}, 'timeout': 10}
+[32mINFO    [0m api_autotest:request_util.py:30 <-- 200 | {"msg":"操作成功","code":200}
+[32mINFO    [0m api_autotest:request_util.py:27 --> GET http://192.168.139.128:1024/dev-api/system/user/list | kwargs={'params': {'pageNum': 1, 'pageSize': 10, 'userName': 'auto92049202'}, 'timeout': 10}
+[32mINFO    [0m api_autotest:request_util.py:30 <-- 200 | {"total":1,"code":200,"msg":"查询成功","rows":[{"userId":142,"admin":false,"avatar":"","createBy":"admin","createTime":"2026-10-15 15:26:43","delFlag":"0","dept":{"ancestors":null,"children":[],"createBy":null,"createTime":null,"delFlag":null,"deptId":100,"deptName":"若依科技","email":null,"leader":"若依","orderNum":null,"parentId":null,"parentName":null,"phone":null,"remark":null,"status":null,"updateBy":null,"updateTime":null},"deptId":100,"email":"auto92049202@test.com","loginDate":null,"loginIp":"","n
+[32mINFO    [0m api_autotest:request_util.py:27 --> DELETE http://192.168.139.128:1024/dev-api/system/user/142 | kwargs={'timeout': 10}
+[32mINFO    [0m api_autotest:request_util.py:30 <-- 200 | {"msg":"操作成功","code":200}
+[32mINFO    [0m api_autotest:request_util.py:27 --> GET http://192.168.139.128:1024/dev-api/system/user/list | kwargs={'params': {'pageNum': 1, 'pageSize': 10, 'userName': 'auto92049202'}, 'timeout': 10}
+[32mINFO    [0m api_autotest:request_util.py:30 <-- 200 | {"total":0,"code":200,"msg":"查询成功","rows":[]}

@@ -1,0 +1,25 @@
+# 登录接口数据驱动用例（正常 + 异常 + 边界）
+# RuoYi 业务码：成功 200，用户名/密码错误等返回 500
+- case_name: "正确账号密码登录成功"
+  username: "admin"
+  password: "admin123"
+  expect_code: 200
+  expect_has_token: true
+
+- case_name: "错误密码登录失败"
+  username: "admin"
+  password: "wrong_pwd_123"
+  expect_code: 500
+  expect_has_token: false
+
+- case_name: "用户名为空"
+  username: ""
+  password: "admin123"
+  expect_code: 500
+  expect_has_token: false
+
+- case_name: "不存在的用户"
+  username: "no_such_user_xx"
+  password: "123456"
+  expect_code: 500
+  expect_has_token: false

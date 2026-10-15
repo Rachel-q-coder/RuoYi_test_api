@@ -1,0 +1,14 @@
+# 环境配置：切换环境时只改这里
+# base_url 直接填后端地址（RuoYi 后端默认 8080 端口，无需 /dev-api 前缀）
+test:
+  base_url: "http://192.168.139.128:1024/dev-api"
+  username: "admin"
+  password: "admin123"
+  timeout: 10
+
+# 预发/测试环境示例（切换时把 test 段替换即可，或自行加 profile）
+# prod:
+#   base_url: "http://你的测试环境地址:8080"
+#   username: "admin"
+#   password: "admin123"
+#   timeout: 10

@@ -1,0 +1,2 @@
+INFO     api_autotest:request_util.py:27 --> POST http://192.168.139.128:1024/dev-api/login | kwargs={'json': {'username': 'admin', 'password': 'admin123'}, 'timeout': 10}
+INFO     api_autotest:request_util.py:30 <-- 200 | {"msg":"操作成功","code":200,"token":"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImxvZ2luX3VzZXJfa2V5IjoiMjZiOGM3MDEtZTY5OC00NTM4LTg2YzMtMWZkMGQ1MGI4NjE2In0.8IvG1a05YYUYNr4aqQYCzQQom2b3yOSfP_5BOBAlnLGZCQ2LJUxx0XdbEmbF66BZvKo_umMqMl4-7GYL0gBPYg"}
